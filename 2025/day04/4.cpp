@@ -2,17 +2,6 @@
 #include <vector>
 #include <fstream>
 
-constexpr int directions[][2] = {
-    {-1, -1},
-    {-1, 0},
-    {-1, 1},
-    {0, -1},
-    {0, 1},
-    {1, -1},
-    {1, 0},
-    {1, 1}
-};
-
 std::vector<std::string> getData(std::string filename) {
     std::vector<std::string> data;
     std::ifstream f(filename);
